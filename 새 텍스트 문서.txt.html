@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Avatar Assets</title>
+</head>
+<body>
+  <h1>Male Hair</h1>
+  <div id="container"></div>
+  <script>
+const container = document.getElementById('container');
+
+for (let i = 1; i <= 10000; i++) {
+  const zeroPadded = String(i).padStart(3, '0');
+  const imgUrl = `https://enter.nexon.com/qplay-avatar-assets/hair/male/[100_${zeroPadded}](male)_01_citemm100${zeroPadded}.png`;
+  const img = document.createElement('img');
+  img.src = imgUrl;
+  img.alt = `Male Hair ${i}`;
+  container.appendChild(img);
+}
+  </script>
+</body>
+</html>
